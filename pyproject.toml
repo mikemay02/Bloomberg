@@ -1,12 +1,23 @@
 [project]
-name = "blank-app-template"
+name = "bloomberg-terminal"
 version = "0.1.0"
-description = "A simple Streamlit app template."
+description = "Finanzterminal im Bloomberg-Stil: yfinance, SEC EDGAR, FRED, News mit FinBERT-Stimmung."
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
-    "streamlit>=1.61.1",
+    "streamlit>=1.40",
+    "yfinance>=0.2.50",
+    "pandas>=2.2",
+    "numpy",
+    "plotly>=5.24",
+    "requests",
+    "feedparser>=6.0",
+    "transformers>=4.44",
+    "torch>=2.3",
 ]
+
+[dependency-groups]
+dev = ["pytest"]
 
 [tool.uv]
 package = false

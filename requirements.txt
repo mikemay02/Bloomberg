@@ -1,0 +1,11 @@
+# CPU-only PyTorch (deutlich kleiner als die CUDA-Variante; noetig fuer Streamlit Cloud)
+--extra-index-url https://download.pytorch.org/whl/cpu
+streamlit>=1.40
+yfinance>=0.2.50
+pandas>=2.2
+numpy
+plotly>=5.24
+requests
+feedparser>=6.0
+transformers>=4.44
+torch>=2.3
